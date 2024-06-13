@@ -1,0 +1,39 @@
+<!-- menu.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        .resumen-texto {
+            font-size: 16px; /* Tamaño de la fuente en píxeles */
+            line-height: 1.5; /* Espaciado entre líneas */
+        }
+    </style>
+</head>
+<body>
+    <div id="resumen-receta" class="texto-oculto">
+        <p class="resumen-texto">
+            <strong>Pollo Marinado con Coles de Bruselas<br></strong>
+            <strong> Tiempo:</strong> 25 minutos<br>
+            <strong>Ingredientes:</strong><br>
+            Coles de Bruselas, cebolla, pechugas de pollo<br>
+            Semillas de sésamo, salsa de soja, aceite, pimienta y sal<br>
+            Marinada: zumo de naranja, salsa de soja, azúcar<br>
+<strong>Elaboración:</strong><br>
+Prepara la marinada y marina el pollo<br>
+Saltea cebolla y coles de Bruselas<br>
+Cocina el pollo y sirve con salsa de soja y sésamo.<br>
+        </p>
+    </div>
+
+    <script>
+        function mostrarResumen(resumen) {
+            var resumenReceta = document.getElementById('resumen-receta');
+            resumenReceta.innerHTML = '<p class="resumen-texto">' + resumen + '</p>';
+        }
+    </script>
+</body>
+</html>

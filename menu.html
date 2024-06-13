@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        .resumen-texto {
+            font-size: 16px; /* Tamaño de la fuente en píxeles */
+            line-height: 1.5; /* Espaciado entre líneas */
+        }
+        .texto-oculto {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="dodo1-text" class="texto-oculto resumen-texto">
+        <br><strong>Pollo al Curry con Manzana</strong>
+        <p><strong>Tiempo:</strong> 50 minutos</p>
+            <strong>Ingredientes:</strong><br>
+            800 g de pechuga de pollo<br>
+            800 ml de leche de coco<br>
+            1 cebolla en juliana<br>
+            2 manzanas en dados<br>
+            4 cdas. de curry en polvo<br>
+            4 cdas. de salsa de tomate<br>
+            Baguette, cilantro, aceite y sal</p>
+            <strong>Elaboración:</strong><br>
+            Corta las pechugas y dóralas con cebolla<br>
+            Agrega manzana, curry, salsa de tomate y leche de coco<br>
+            Cocina a fuego lento y sirve con tostadas<br>
+    </div>
+    <div id="dodo2-text" class="texto-oculto resumen-texto">
+        <p><strong>Texto resumen de Dodo 2</strong></p>
+        <p>Contenido del resumen de Dodo 2.</p>
+    </div>
+    <div id="dodo3-text" class="texto-oculto resumen-texto">
+        <p><strong>Texto resumen de Dodo 3</strong></p>
+        <p>Contenido del resumen de Dodo 3.</p>
+    </div>
+    <div id="dodo4-text" class="texto-oculto resumen-texto">
+        <p><strong>Texto resumen de Dodo 4</strong></p>
+        <p>Contenido del resumen de Dodo 4.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var hash = window.location.hash.substring(1);
+            if (hash) {
+                var elemento = document.getElementById(hash + '-text');
+                if (elemento) {
+                    elemento.classList.add('visible');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

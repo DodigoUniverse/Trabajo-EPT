@@ -1,0 +1,48 @@
+<!-- cuadros.html -->
+
+<div class="cuadro">
+    <a href="#" class="cuadro-link" onclick="mostrarTexto('dodo1')">Dodo 1</a>
+</div>
+<div class="cuadro">
+    <a href="#" class="cuadro-link" onclick="mostrarTexto('dodo2')">Dodo 2</a>
+</div>
+<div class="cuadro">
+    <a href="#" class="cuadro-link" onclick="mostrarTexto('dodo3')">Dodo 3</a>
+</div>
+<div class="cuadro">
+    <a href="#" class="cuadro-link" onclick="mostrarTexto('dodo4')">Dodo 4</a>
+</div>
+
+<div id="dodo1-text" class="texto-oculto">
+    <p class="resumen-texto">Texto resumen de Dodo 1...</p>
+</div>
+<div id="dodo2-text" class="texto-oculto">
+    <p class="resumen-texto">Texto resumen de Dodo 2...</p>
+</div>
+<div id="dodo3-text" class="texto-oculto">
+    <p class="resumen-texto">Texto resumen de Dodo 3...</p>
+</div>
+<div id="dodo4-text" class="texto-oculto">
+    <p class="resumen-texto">Texto resumen de Dodo 4...</p>
+</div>
+
+<style>
+    .resumen-texto {
+        font-size: 16px; /* Tamaño de la fuente en píxeles */
+        line-height: 1.5; /* Espaciado entre líneas */
+    }
+</style>
+
+<script>
+    function mostrarTexto(id) {
+        // Oculta todos los textos
+        var textos = document.querySelectorAll('.texto-oculto');
+        textos.forEach(function(texto) {
+            texto.style.display = 'none';
+        });
+
+        // Muestra el texto correspondiente al ID dado
+        var textoMostrar = document.getElementById(id + '-text');
+        textoMostrar.style.display = 'block';
+    }
+</script>

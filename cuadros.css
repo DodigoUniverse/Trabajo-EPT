@@ -1,0 +1,11 @@
+/* cuadros.css */
+
+.cuadro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    cursor: pointer; /* Para mostrar el cursor como un puntero al pasar sobre los cuadros */
+}

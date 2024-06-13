@@ -1,0 +1,40 @@
+<!-- menu.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        .resumen-texto {
+            font-size: 16px; /* Tamaño de la fuente en píxeles */
+            line-height: 1.5; /* Espaciado entre líneas */
+        }
+    </style>
+</head>
+<body>
+    <div id="resumen-receta" class="texto-oculto">
+        <p class="resumen-texto">
+            <strong>Pollo al Limón<br></strong>
+            <strong> Tiempo:</strong> 45 minutos<br>
+            <strong>Ingredientes:</strong><br>
+            4 pechugas de pollo<br>
+            1 limóno<br>
+            1 cebolla, ajo, caldo de pollo, vino blanco<br>
+            Harina, orégano, pimienta, aceite y sal<br>
+<strong>Elaboración:</strong><br>
+Dora el pollo con cebolla y ajo<br>
+Agrega ralladura y zumo de limón, vino y caldo<br>
+Cocina y sirve con orégano<br>
+        </p>
+    </div>
+
+    <script>
+        function mostrarResumen(resumen) {
+            var resumenReceta = document.getElementById('resumen-receta');
+            resumenReceta.innerHTML = '<p class="resumen-texto">' + resumen + '</p>';
+        }
+    </script>
+</body>
+</html>
